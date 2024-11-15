@@ -25,5 +25,7 @@ require("lazy").setup(
         "vim-syntastic/syntastic",
         "vim-scripts/indentpython.vim",
         "ntpeters/vim-better-whitespace",
+        "preservim/vim-markdown",
+        "tpope/vim-commentary",
     }
 )
