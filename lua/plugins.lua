@@ -20,13 +20,15 @@ require("lazy").setup(
         "ctrlpvim/ctrlp.vim",
         "vim-airline/vim-airline",
         "preservim/nerdtree",
-        "tmhedberg/SimpylFold",
         "tpope/vim-fugitive",
         "vim-syntastic/syntastic",
-        "vim-scripts/indentpython.vim",
         "ntpeters/vim-better-whitespace",
         "preservim/vim-markdown",
         "tpope/vim-commentary",
         "godlygeek/tabular",
+        "jmcantrell/vim-virtualenv",
+        {"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"},
+        --"tmhedberg/SimpylFold", --replaced by treesitter
+        --"vim-scripts/indentpython.vim", -- replaced by treesitter
     }
 )

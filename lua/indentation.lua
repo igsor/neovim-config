@@ -21,3 +21,10 @@ vim.opt.softtabstop = 4
 
 -- insert 4 spaces on a tab
 vim.opt.shiftwidth = 4
+
+-- treesitter
+require'nvim-treesitter.configs'.setup {
+  indent = {
+    enable = true
+  }
+}
