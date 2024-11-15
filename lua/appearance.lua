@@ -14,7 +14,7 @@ vim.opt.termguicolors = true
 vim.opt.background = "dark"
 
 -- color scheme
-vim.cmd "colorscheme monokai_pro"
+vim.cmd "colorscheme tokyonight-night"
 
 -- Disable noise
 vim.opt.errorbells = false
@@ -49,4 +49,21 @@ vim.opt.showmode = false
 --vim.g.airline_section_x = "" -- Filetype
 --vim.g.airline_section_y = "" -- Encoding
 --vim.g.airline_section_z = "" -- Position in the file
-vim.g.airline_powerline_fonts = true -- no effect?!
+
+-- adjust status bar theme to colorscheme
+--vim.g.airline_theme = "tomorrow" -- FIXME: does not change some backgrounds, looks weird
+
+-- enable powerline font
+vim.g.airline_powerline_fonts = true
+
+-- automatic symbol selection doesn't work, do it manually
+vim.g.airline_left_sep = ''
+vim.g.airline_left_alt_sep = ''
+vim.g.airline_right_sep = ''
+vim.g.airline_right_alt_sep = ''
+vim.g.airline_symbols.branch = ''
+vim.g.airline_symbols.colnr = ' ℅:'
+vim.g.airline_symbols.readonly = ''
+vim.g.airline_symbols.linenr = ' :'
+vim.g.airline_symbols.maxlinenr = '☰ '
+vim.g.airline_symbols.dirty='⚡'

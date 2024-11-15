@@ -16,9 +16,10 @@ vim.opt.rtp:prepend(lazypath)
 -- install plugins
 require("lazy").setup(
     {
-        "tanvirtin/monokai.nvim",
+        "folke/tokyonight.nvim",
         "ctrlpvim/ctrlp.vim",
         "vim-airline/vim-airline",
+	"vim-airline/vim-airline-themes",
         "preservim/nerdtree",
         "tpope/vim-fugitive",
         "vim-syntastic/syntastic",
