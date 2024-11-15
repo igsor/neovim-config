@@ -27,5 +27,6 @@ require("lazy").setup(
         "ntpeters/vim-better-whitespace",
         "preservim/vim-markdown",
         "tpope/vim-commentary",
+        "godlygeek/tabular",
     }
 )

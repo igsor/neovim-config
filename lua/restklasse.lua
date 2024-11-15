@@ -19,6 +19,10 @@ vim.g.syntastic_always_populate_loc_list = true
 vim.g.syntastic_auto_loc_list = true
 vim.g.syntastic_check_on_open = true
 vim.g.syntastic_check_on_wq = false
+
+
+vim.keymap.set("v", "<leader>tt", ":Tabularize /")
+
 -- NOTE: syntastic can be integrated with airline!
 
 
