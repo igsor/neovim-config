@@ -24,6 +24,17 @@ vim.g.syntastic_check_on_wq = false
 vim.keymap.set("v", "<leader>tt", ":Tabularize /")
 
 -- NOTE: syntastic can be integrated with airline!
+--
+
+-- Highlight on yank
+-- vim.api.nvim_create_autocmd('TextYankPost', {
+--     pattern = '*',
+--     callback = function() vim.highlight.on_yank({timeout=350, higroup='Visual'}) end
+-- })
+--
+--
+-- map('n', 'n', 'nzz') -- Auto recenter after n
+-- map('n', 'N', 'Nzz') -- Auto recenter after N
 
 
 --" Delete trailing white space on save

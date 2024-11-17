@@ -15,3 +15,7 @@ vim.opt.filetype.plugin = true
 
 -- don't redraw while executing macros (good performance config)
 --vim.opt.lazyredraw = true
+
+
+
+-- TODO: enable wrap so that left/right/h/l wrap lines!

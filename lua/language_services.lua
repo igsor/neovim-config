@@ -32,5 +32,7 @@ require'lspconfig'.pylsp.setup{
   }
 }
 
+-- NOTE: add .ignore file in project root with paths and patterns to be ignored by telescope
+
 
 require('lsp_signature').setup() -- TODO: see if can be replaced
