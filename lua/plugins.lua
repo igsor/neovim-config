@@ -32,6 +32,9 @@ require("lazy").setup(
         "mfussenegger/nvim-dap-python",
         "theHamsta/nvim-dap-virtual-text",
         {"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"},
+        "neovim/nvim-lspconfig",
+        "hrsh7th/nvim-cmp",
+        "ray-x/lsp_signature.nvim",
         --"tmhedberg/SimpylFold", --replaced by treesitter
         --"vim-scripts/indentpython.vim", -- replaced by treesitter
     }
