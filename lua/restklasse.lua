@@ -1,5 +1,5 @@
 -- autocompletion
-vim.opt.completeopt = {'menu', 'menuone', 'noselect'}
+--vim.opt.completeopt = {'menu', 'menuone', 'noselect'}
 
 -- show trailing whitespaces
 vim.g.better_whitespace_enabled = true

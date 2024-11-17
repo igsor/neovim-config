@@ -19,7 +19,7 @@ require("lazy").setup(
         "folke/tokyonight.nvim",
         "ctrlpvim/ctrlp.vim",
         "vim-airline/vim-airline",
-	"vim-airline/vim-airline-themes",
+        "vim-airline/vim-airline-themes",
         "preservim/nerdtree",
         "tpope/vim-fugitive",
         "vim-syntastic/syntastic",
