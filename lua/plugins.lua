@@ -35,6 +35,7 @@ require("lazy").setup(
         "neovim/nvim-lspconfig",
         "hrsh7th/nvim-cmp",
         "ray-x/lsp_signature.nvim",
+        -- "rose-pine/neovim",
         --"tmhedberg/SimpylFold", --replaced by treesitter
         --"vim-scripts/indentpython.vim", -- replaced by treesitter
     }

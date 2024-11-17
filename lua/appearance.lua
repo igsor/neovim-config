@@ -15,6 +15,7 @@ vim.opt.background = "dark"
 
 -- color scheme
 vim.cmd "colorscheme tokyonight-night"
+-- vim.cmd "colorscheme rose-pine-main"
 
 -- Disable noise
 vim.opt.errorbells = false
