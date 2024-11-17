@@ -3,6 +3,7 @@ require("plugins")
 
 -- import the rest in arbitrary order
 require("appearance")
+require("debugging")
 require("file_browsing")
 require("folding")
 require("generic")

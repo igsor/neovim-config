@@ -28,6 +28,9 @@ require("lazy").setup(
         "tpope/vim-commentary",
         "godlygeek/tabular",
         "jmcantrell/vim-virtualenv",
+        "mfussenegger/nvim-dap",
+        "mfussenegger/nvim-dap-python",
+        "theHamsta/nvim-dap-virtual-text",
         {"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"},
         --"tmhedberg/SimpylFold", --replaced by treesitter
         --"vim-scripts/indentpython.vim", -- replaced by treesitter
