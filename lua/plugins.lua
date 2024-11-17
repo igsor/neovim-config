@@ -22,7 +22,7 @@ require("lazy").setup(
         "vim-airline/vim-airline-themes",
         "preservim/nerdtree",
         "tpope/vim-fugitive",
-        "vim-syntastic/syntastic",
+        -- "vim-syntastic/syntastic", -- FIXME: takes WAY too long; replace
         "ntpeters/vim-better-whitespace",
         "preservim/vim-markdown",
         "tpope/vim-commentary",
