@@ -10,12 +10,11 @@ vim.opt.history = 1000
 -- enable filetype plugins
 vim.opt.filetype.plugin = true
 
+-- enable wrapping with h and l
+vim.opt.whichwrap:append("h,l")
+
 -- a buffer becomes hidden when it is abandoned
 --vim.opt.hid = true
 
 -- don't redraw while executing macros (good performance config)
 --vim.opt.lazyredraw = true
-
-
-
--- TODO: enable wrap so that left/right/h/l wrap lines!

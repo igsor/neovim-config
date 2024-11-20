@@ -41,5 +41,21 @@ require("lazy").setup(
         -- "rose-pine/neovim",
         --"tmhedberg/SimpylFold", --replaced by treesitter
         --"vim-scripts/indentpython.vim", -- replaced by treesitter
+        --
+        -- cmp
+        "hrsh7th/cmp-nvim-lsp",
+        "hrsh7th/cmp-buffer",
+        "hrsh7th/cmp-path",
+        "hrsh7th/cmp-cmdline",
+        "hrsh7th/nvim-cmp",
+        -- "SirVer/ultisnips",
+        -- "quangnguyen30192/cmp-nvim-ultisnips",
+	-- "tzachar/local-highlight.nvim",
     }
 )
+
+-- require('local-highlight').setup({
+-- 	hlgroup='Search',
+
+-- })
+
