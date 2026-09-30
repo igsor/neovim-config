@@ -50,7 +50,8 @@ require("lazy").setup(
         "hrsh7th/nvim-cmp",
         -- "SirVer/ultisnips",
         -- "quangnguyen30192/cmp-nvim-ultisnips",
-	-- "tzachar/local-highlight.nvim",
+        -- "tzachar/local-highlight.nvim",
+        "rmagatti/auto-session",
     }
 )
 
@@ -59,3 +60,4 @@ require("lazy").setup(
 
 -- })
 
+require('auto-session').setup({})
