@@ -57,6 +57,7 @@ require("lazy").setup(
         -- "rcarriga/nvim-notify", -- used by pi, doesn't work as expected.
         -- "georg3tom/llama.nvim",
         -- "heavysudo/pi-neovim-plugin",
+        "zlass/abolish.nvim",
     }
 )
 
