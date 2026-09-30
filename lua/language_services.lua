@@ -19,7 +19,7 @@ vim.keymap.set(
 -- require('lspconfig').jedi_language_server.setup{}
 
 -- TODO: replace by python-lsp-server which also builds on jedi but brings in additional features like autoimport through rope
-require'lspconfig'.pylsp.setup{
+require('lspconfig').pylsp.setup{
   settings = {
     pylsp = {
       plugins = {

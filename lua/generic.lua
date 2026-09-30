@@ -18,3 +18,5 @@ vim.opt.whichwrap:append("h,l")
 
 -- don't redraw while executing macros (good performance config)
 --vim.opt.lazyredraw = true
+--
+--

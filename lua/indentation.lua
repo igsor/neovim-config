@@ -23,7 +23,7 @@ vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
 
 -- treesitter
-require'nvim-treesitter.configs'.setup {
+require('nvim-treesitter.configs').setup {
   indent = {
     enable = true
   }

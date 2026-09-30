@@ -1,5 +1,5 @@
 -- enable incremental selection
-require'nvim-treesitter.configs'.setup {
+require('nvim-treesitter.configs').setup {
   incremental_selection = {
     enable = true,
     keymaps = {
