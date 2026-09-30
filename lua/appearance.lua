@@ -68,3 +68,10 @@ vim.g.airline_symbols.readonly = ''
 vim.g.airline_symbols.linenr = ' :'
 vim.g.airline_symbols.maxlinenr = '☰ '
 vim.g.airline_symbols.dirty='⚡'
+
+
+
+
+-- require("notify")
+-- require("telescope").load_extension("notify")
+-- require('telescope').extensions.notify.notify(<opts>)
