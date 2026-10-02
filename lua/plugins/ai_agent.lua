@@ -3,9 +3,6 @@ return {
         "pablopunk/pi.nvim",
         dependencies = {
             "rcarriga/nvim-notify",
-            -- FIXME: should configure telescope if nvim-notify is used
-            -- require("telescope").load_extension("notify")
-            -- require('telescope').extensions.notify.notify(<opts>)
         },
         opts = {
             binary = "~/.local/share/pi-node/current/bin/pi",

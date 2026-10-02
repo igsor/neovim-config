@@ -2,14 +2,16 @@ return {
     {
         "nvim-telescope/telescope.nvim",
         dependencies = {
-            "nvim-lua/plenary.nvim",
             "debugloop/telescope-undo.nvim",
+            "nvim-lua/plenary.nvim",
+            "rcarriga/nvim-notify",
         },
         opts = function()
             local actions = require('telescope.actions')
             return {
                 extensions = {
                     undo = {},
+                    notify = {},
                 },
                 defaults = {
                     initial_mode = "normal",
@@ -84,7 +86,9 @@ return {
         config = function(_, opts)
             require('telescope').setup(opts)
             require('telescope').load_extension('undo')
+            require('telescope').load_extension('notify')
             vim.cmd('cnoreabbrev ls Telescope buffers')
+            vim.cmd('cnoreabbrev Notifications Telescope notify')
         end,
     },
 }
