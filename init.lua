@@ -2,6 +2,7 @@
 require("plugins")
 
 -- import the rest in arbitrary order
+require("buffer")
 require("appearance")
 require("debugging")
 require("file_browsing")
@@ -15,7 +16,6 @@ require("load_and_save")
 require("restklasse")
 require("selection")
 require("text_search")
-require("windows")
 require("language_services")
 require("completion")
 require("ai_agent")
