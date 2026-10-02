@@ -21,7 +21,6 @@ vim.opt.rtp:prepend(lazypath)
 -- load and configure plugins
 require("lazy").setup(
     {
-        "folke/tokyonight.nvim",
         "ctrlpvim/ctrlp.vim",
         "vim-airline/vim-airline",
         "vim-airline/vim-airline-themes",

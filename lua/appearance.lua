@@ -1,13 +1,3 @@
--- enable 24-bit RGB color in the TUI
-vim.opt.termguicolors = true
-
--- set to dark mode
-vim.opt.background = "dark"
-
--- color scheme
-vim.cmd "colorscheme tokyonight-night"
--- vim.cmd "colorscheme rose-pine-main"
-
 -- always show the status like
 vim.opt.laststatus = 2
 
