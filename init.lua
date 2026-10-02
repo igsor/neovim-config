@@ -27,7 +27,6 @@ require("lazy").setup(
         "vim-airline/vim-airline-themes",
         "preservim/nerdtree",
         -- "vim-syntastic/syntastic", -- FIXME: takes WAY too long; replace
-        "preservim/vim-markdown",
         "jmcantrell/vim-virtualenv",
         "machakann/vim-sandwich",
         {"nvim-telescope/telescope.nvim", tag = "0.1.8", dependencies = { "nvim-lua/plenary.nvim" }},
