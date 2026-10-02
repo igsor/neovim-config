@@ -18,8 +18,6 @@ vim.g.syntastic_check_on_open = true
 vim.g.syntastic_check_on_wq = false
 
 
-vim.keymap.set("v", "<leader>tt", ":Tabularize /")
-
 -- NOTE: syntastic can be integrated with airline!
 --
 

@@ -28,7 +28,6 @@ require("lazy").setup(
         "preservim/nerdtree",
         -- "vim-syntastic/syntastic", -- FIXME: takes WAY too long; replace
         "preservim/vim-markdown",
-        "godlygeek/tabular",
         "jmcantrell/vim-virtualenv",
         "machakann/vim-sandwich",
         "mfussenegger/nvim-dap",
