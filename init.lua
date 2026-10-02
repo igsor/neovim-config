@@ -2,6 +2,7 @@
 require("plugins")
 
 -- import the rest in arbitrary order
+require("general") -- NOTE: should be imported first (leader)
 require("buffer")
 require("appearance")
 require("debugging")
@@ -11,7 +12,6 @@ require("generic")
 require("highlighting")
 require("indentation")
 require("integration")
-require("keybindings")
 require("restklasse")
 require("selection")
 require("text_search")
