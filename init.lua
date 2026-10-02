@@ -44,7 +44,6 @@ require("lazy").setup(
         -- "SirVer/ultisnips",
         -- "quangnguyen30192/cmp-nvim-ultisnips",
         -- "tzachar/local-highlight.nvim",
-        "rmagatti/auto-session",
         "pablopunk/pi.nvim",
         "ggml-org/llama.vim",
         -- "rcarriga/nvim-notify", -- used by pi, doesn't work as expected.
@@ -60,7 +59,6 @@ require("lazy").setup(
 
 -- })
 
-require('auto-session').setup({})
 
 -- import the rest in arbitrary order
 require("appearance")
