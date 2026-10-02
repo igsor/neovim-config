@@ -28,7 +28,6 @@ require("lazy").setup(
         "preservim/nerdtree",
         "tpope/vim-fugitive",
         -- "vim-syntastic/syntastic", -- FIXME: takes WAY too long; replace
-        "ntpeters/vim-better-whitespace",
         "preservim/vim-markdown",
         "tpope/vim-commentary",
         "godlygeek/tabular",

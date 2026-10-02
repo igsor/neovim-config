@@ -1,9 +1,6 @@
 -- autocompletion
 --vim.opt.completeopt = {'menu', 'menuone', 'noselect'}
 
--- show trailing whitespaces
-vim.g.better_whitespace_enabled = true
-
 -- show whitespace and tab mixtures
 vim.g.show_spaces_that_precede_tabs = true
 
