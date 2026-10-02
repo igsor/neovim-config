@@ -22,8 +22,6 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup(
     {
         "ctrlpvim/ctrlp.vim",
-        "vim-airline/vim-airline",
-        "vim-airline/vim-airline-themes",
         "preservim/nerdtree",
         {"nvim-telescope/telescope.nvim", tag = "0.1.8", dependencies = { "nvim-lua/plenary.nvim" }},
         {"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"},
@@ -60,7 +58,6 @@ require("lazy").setup(
 
 
 -- import the rest in arbitrary order
-require("appearance")
 require("file_browsing")
 require("folding")
 require("highlighting")

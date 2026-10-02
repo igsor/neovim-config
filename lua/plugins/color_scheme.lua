@@ -6,6 +6,7 @@ return {
             style = "storm",
             transparent = true,
             terminal_colors = true,
+            lualine_bold = true,
         },
         init = function()
             -- enable 24-bit RGB color in the TUI
