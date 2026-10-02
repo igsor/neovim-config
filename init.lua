@@ -23,7 +23,6 @@ require("lazy").setup(
     {
         {"nvim-telescope/telescope.nvim", tag = "0.1.8", dependencies = { "nvim-lua/plenary.nvim" }},
         "hrsh7th/nvim-cmp",
-        "ray-x/lsp_signature.nvim",
         -- "rose-pine/neovim",
         --"vim-scripts/indentpython.vim", -- replaced by treesitter
         --
@@ -53,6 +52,5 @@ require("lazy").setup(
 
 
 -- import the rest in arbitrary order
-require("language_services")
 require("completion")
 require("ai_agent")
