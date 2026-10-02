@@ -63,9 +63,27 @@ return {
                 },
             }
         end,
+        keys = {
+            -- { "<leader>ff", "<CMD>Telescope document_symbols<CR>" }, -- superseeded by treesitter
+            { "<leader>ff", "<CMD>Telescope find_files theme=ivy initial_mode=insert<CR>" },
+            { "<leader>gb", "<CMD>Telescope git_branches<CR>" },
+            { "<leader>gc", "<CMD>Telescope git_commits<CR>" },
+            { "<leader>gf", "<CMD>Telescope git_files theme=ivy initial_mode=insert<CR>" },
+            { "<leader>gh", "<CMD>Telescope git_stash<CR>" },
+            { "<leader>gs", "<CMD>Telescope git_status<CR>" },
+            { "<M-8>", "<CMD>Telescope grep_string<CR>" },
+            { "<M-o>", "<CMD>Telescope jumplist<CR>" },
+            { "<leader>/", "<CMD>Telescope live_grep initial_mode=insert<CR>" },
+            -- { "<C-]>", "<CMD>Telescope lsp_definitions<CR>" }, -- already covered
+            { "<M-]>", "<CMD>Telescope lsp_references<CR>" },
+            { "<leader>s", "<CMD>Telescope treesitter initial_mode=insert<CR>" },
+            { "<leader>u", "<CMD>Telescope undo<CR>" },
+            { "<C-s>", "<CMD>Telescope session-lens<CR>" },
+        },
         config = function(_, opts)
             require('telescope').setup(opts)
             require('telescope').load_extension('undo')
+            vim.cmd('cnoreabbrev ls Telescope buffers')
         end,
     },
 }
