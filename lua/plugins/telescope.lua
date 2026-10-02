@@ -82,6 +82,7 @@ return {
             { "<leader>s", "<CMD>Telescope treesitter initial_mode=insert<CR>" },
             { "<leader>u", "<CMD>Telescope undo<CR>" },
             { "<C-s>", "<CMD>Telescope session-lens<CR>" },
+            { "<leader>!", "<CMD>Telescope diagnostics<CR>" },
         },
         config = function(_, opts)
             require('telescope').setup(opts)
@@ -89,6 +90,7 @@ return {
             require('telescope').load_extension('notify')
             vim.cmd('cnoreabbrev ls Telescope buffers')
             vim.cmd('cnoreabbrev Notifications Telescope notify')
+            vim.api.nvim_create_user_command("Diagnostics", "Telescope diagnostics", { desc = "show diagnostics" })
         end,
     },
 }
