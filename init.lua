@@ -54,7 +54,6 @@ require("lazy").setup(
 
 
 -- import the rest in arbitrary order
-require("indentation")
 require("selection")
 require("language_services")
 require("completion")

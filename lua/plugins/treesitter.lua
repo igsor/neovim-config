@@ -4,6 +4,7 @@ return {
         lazy = false,
         build = ":TSUpdate",
         opts = {
+            indent = { enable = true },
             folds = { enable = true },
             highlight = {
                 enable = true,
