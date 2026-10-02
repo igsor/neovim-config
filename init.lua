@@ -22,7 +22,6 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup(
     {
         {"nvim-telescope/telescope.nvim", tag = "0.1.8", dependencies = { "nvim-lua/plenary.nvim" }},
-        "neovim/nvim-lspconfig",
         "hrsh7th/nvim-cmp",
         "ray-x/lsp_signature.nvim",
         -- "rose-pine/neovim",
