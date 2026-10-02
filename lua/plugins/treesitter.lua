@@ -14,6 +14,16 @@ return {
                 -- Instead of true it can also be a list of languages
                 additional_vim_regex_highlighting = false,
             },
+            -- enable incremental selection
+            incremental_selection = {
+                enable = true,
+                keymaps = {
+                    init_selection = "<CR>", -- set to `false` to disable one of the mappings
+                    node_incremental = "<CR>",
+                    scope_incremental = "<TAB>",
+                    node_decremental = "<S-TAB>",
+                },
+            },
         },
         config = function(_, opts)
             -- enable treesitter
