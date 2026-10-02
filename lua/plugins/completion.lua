@@ -67,6 +67,11 @@ return {
         end,
     },
     {
+        'windwp/nvim-autopairs',
+        event = "InsertEnter",
+        config = true,
+    },
+    {
         "ggml-org/llama.vim",
         opts = {
             -- NOTE: MUST specify all keys!
