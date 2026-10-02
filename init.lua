@@ -24,9 +24,7 @@ require("lazy").setup(
         -- "SirVer/ultisnips",
         -- "quangnguyen30192/cmp-nvim-ultisnips",
         "pablopunk/pi.nvim",
-        "ggml-org/llama.vim",
         -- "rcarriga/nvim-notify", -- used by pi, doesn't work as expected.
-        -- "georg3tom/llama.nvim",
         -- "heavysudo/pi-neovim-plugin",
   {import = "plugins"},
   {import = "lang"},
