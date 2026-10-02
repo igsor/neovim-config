@@ -38,7 +38,6 @@ require("lazy").setup(
         {"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"},
         "neovim/nvim-lspconfig",
         "hrsh7th/nvim-cmp",
-        "liuchengxu/vista.vim",
         "ray-x/lsp_signature.nvim",
         -- "rose-pine/neovim",
         --"tmhedberg/SimpylFold", --replaced by treesitter
