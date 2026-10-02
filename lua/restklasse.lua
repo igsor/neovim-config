@@ -12,14 +12,6 @@ vim.g.strip_whitespace_confirm = false -- FIXME: seems not to work as expected
 --vim.opt.syntax = "enable"
 
 vim.g.python_highlight_all = true
-vim.g.syntastic_always_populate_loc_list = true
-vim.g.syntastic_auto_loc_list = true
-vim.g.syntastic_check_on_open = true
-vim.g.syntastic_check_on_wq = false
-
-
--- NOTE: syntastic can be integrated with airline!
---
 
 -- Highlight on yank
 -- vim.api.nvim_create_autocmd('TextYankPost', {
