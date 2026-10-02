@@ -21,7 +21,6 @@ vim.opt.rtp:prepend(lazypath)
 -- load and configure plugins
 require("lazy").setup(
     {
-        "preservim/nerdtree",
         {"nvim-telescope/telescope.nvim", tag = "0.1.8", dependencies = { "nvim-lua/plenary.nvim" }},
         {"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"},
         "neovim/nvim-lspconfig",
@@ -57,7 +56,6 @@ require("lazy").setup(
 
 
 -- import the rest in arbitrary order
-require("file_browsing")
 require("folding")
 require("highlighting")
 require("indentation")
