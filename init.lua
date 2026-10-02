@@ -30,9 +30,6 @@ require("lazy").setup(
         "preservim/vim-markdown",
         "jmcantrell/vim-virtualenv",
         "machakann/vim-sandwich",
-        "mfussenegger/nvim-dap",
-        "mfussenegger/nvim-dap-python",
-        "theHamsta/nvim-dap-virtual-text",
         {"nvim-telescope/telescope.nvim", tag = "0.1.8", dependencies = { "nvim-lua/plenary.nvim" }},
         {"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"},
         "neovim/nvim-lspconfig",
@@ -72,7 +69,6 @@ require('auto-session').setup({})
 
 -- import the rest in arbitrary order
 require("appearance")
-require("debugging")
 require("file_browsing")
 require("folding")
 require("highlighting")
