@@ -49,6 +49,23 @@ vim.opt.magic = true
 -- vim.keymap.set('n', 'N', 'Nzz')
 
 
+
+---
+-- folding
+---
+
+-- enable folding
+-- NOTE: treesitter takes care of this
+--vim.opt.foldmethod = "indent"
+
+-- do not fold by default
+vim.opt.foldlevel = 99
+
+-- folding via spacebar
+vim.keymap.set("n", "<space>", "za")
+
+
+
 ---
 -- indentation and tab handling
 ---

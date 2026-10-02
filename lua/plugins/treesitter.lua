@@ -4,6 +4,7 @@ return {
         lazy = false,
         build = ":TSUpdate",
         opts = {
+            folds = { enable = true },
             highlight = {
                 enable = true,
                 -- Setting this to true will run `:h syntax` and tree-sitter at the same time.
@@ -16,6 +17,11 @@ return {
         config = function(_, opts)
             -- enable treesitter
             require("nvim-treesitter.configs").setup(opts)
+        end,
+        init = function()
+            -- enable folding
+            vim.wo[0][0].foldexpr = 'v:lua.vim.treesitter.foldexpr()'
+            vim.wo[0][0].foldmethod = 'expr'
         end,
     },
 }

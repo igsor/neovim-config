@@ -26,7 +26,6 @@ require("lazy").setup(
         "hrsh7th/nvim-cmp",
         "ray-x/lsp_signature.nvim",
         -- "rose-pine/neovim",
-        --"tmhedberg/SimpylFold", --replaced by treesitter
         --"vim-scripts/indentpython.vim", -- replaced by treesitter
         --
         -- cmp
@@ -55,7 +54,6 @@ require("lazy").setup(
 
 
 -- import the rest in arbitrary order
-require("folding")
 require("indentation")
 require("selection")
 require("language_services")
