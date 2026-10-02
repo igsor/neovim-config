@@ -1,0 +1,5 @@
+return {
+    {
+        "zlass/abolish.nvim",
+    },
+}
