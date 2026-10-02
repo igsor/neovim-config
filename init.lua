@@ -25,7 +25,6 @@ require("lazy").setup(
         --"vim-scripts/indentpython.vim", -- replaced by treesitter
         --
         -- cmp
-        "hrsh7th/cmp-cmdline",
         -- "SirVer/ultisnips",
         -- "quangnguyen30192/cmp-nvim-ultisnips",
         "pablopunk/pi.nvim",
@@ -39,5 +38,4 @@ require("lazy").setup(
 )
 
 -- import the rest in arbitrary order
-require("completion")
 require("ai_agent")
