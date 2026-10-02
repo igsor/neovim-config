@@ -19,10 +19,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 -- load and configure plugins
-require("lazy").setup(
-    {
-        -- "SirVer/ultisnips",
-        -- "quangnguyen30192/cmp-nvim-ultisnips",
+require("lazy").setup({
   {import = "plugins"},
   {import = "lang"},
   }

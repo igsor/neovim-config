@@ -15,12 +15,6 @@ return {
             --   require('lspconfig')['pylsp'].setup { capabilities = require('cmp_nvim_lsp').default_capabilities() }
             local cmp = require("cmp")
             return {
-                snippet = {
-                    expand = function(args)
-                      -- vim.fn["UltiSnips#Anon"](args.body) -- For `ultisnips` users.
-                      vim.snippet.expand(args.body) -- For native neovim snippets (Neovim v0.10+)
-                    end,
-                },
                 window = {
                     completion = cmp.config.window.bordered(),
                     documentation = cmp.config.window.bordered(),
@@ -35,12 +29,15 @@ return {
                 }),
                 sources = cmp.config.sources(
                     {{ name = 'nvim_lsp' }},
-                    -- { name = 'vsnip' }, -- For vsnip users.
-                    -- { name = 'luasnip' }, -- For luasnip users.
-                    -- { name = 'ultisnips' }, -- For ultisnips users.
-                    -- { name = 'snippy' }, -- For snippy users.
                     {{ name = 'buffer' }}
+                    -- {{ name = 'luasnip' }}
                 ),
+                -- snippet = {
+                --     expand = function(args)
+                --       require('luasnip').lsp_expand(args.body) -- For `luasnip` users.
+                --       -- vim.snippet.expand(args.body) -- For native neovim snippets (Neovim v0.10+)
+                --     end,
+                -- },
             }
         end,
     },
