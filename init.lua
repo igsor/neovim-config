@@ -23,13 +23,7 @@ require("lazy").setup(
     {
         -- "SirVer/ultisnips",
         -- "quangnguyen30192/cmp-nvim-ultisnips",
-        "pablopunk/pi.nvim",
-        -- "rcarriga/nvim-notify", -- used by pi, doesn't work as expected.
-        -- "heavysudo/pi-neovim-plugin",
   {import = "plugins"},
   {import = "lang"},
   }
 )
-
--- import the rest in arbitrary order
-require("ai_agent")
