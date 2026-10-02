@@ -24,3 +24,6 @@ vim.opt.splitbelow = true
 
 -- open new horizontal splits right
 vim.opt.splitright = true
+
+-- use ESC in terminal mode to escape insert mode
+vim.keymap.set("t", "<Esc>", "<C-\\><C-n>")
