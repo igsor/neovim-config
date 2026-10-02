@@ -5,6 +5,9 @@ vim.opt.hidden = true
 -- update buffer when file is changed from the outside
 vim.opt.autoread = true
 
+-- a buffer becomes hidden when it is abandoned
+--vim.opt.hid = true
+
 -- buffer switches via leader
 vim.keymap.set("n", "<leader>n", ":bn<cr>")
 vim.keymap.set("n", "<leader>p", ":bp<cr>")
