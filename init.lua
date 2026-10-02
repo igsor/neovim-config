@@ -22,7 +22,6 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup(
     {
         {"nvim-telescope/telescope.nvim", tag = "0.1.8", dependencies = { "nvim-lua/plenary.nvim" }},
-        {"nvim-treesitter/nvim-treesitter", build = ":TSUpdate"},
         "neovim/nvim-lspconfig",
         "hrsh7th/nvim-cmp",
         "ray-x/lsp_signature.nvim",
@@ -57,7 +56,6 @@ require("lazy").setup(
 
 -- import the rest in arbitrary order
 require("folding")
-require("highlighting")
 require("indentation")
 require("selection")
 require("language_services")
