@@ -10,7 +10,7 @@ return {
         opts = function()
             -- register nvim-cmp lsp capabilities
             -- new style:
-            --   vim.lsp.config("*", { capabilities = require("cmp_nvim_lsp").default_capabilities() })
+            vim.lsp.config("*", { capabilities = require("cmp_nvim_lsp").default_capabilities() })
             -- old style:
             --   require('lspconfig')['pylsp'].setup { capabilities = require('cmp_nvim_lsp').default_capabilities() }
             local cmp = require("cmp")
@@ -83,6 +83,7 @@ return {
             enable_at_startup = true,
             endpoint_fim = "http://127.0.0.1:8012/infill",
             endpoint_inst = "http://127.0.0.1:8012/v1/chat/completions",
+            fim_debounce_ms = 100,
             info_compact = 3,
             keymap_debug_toggle = "",
             keymap_fim_accept_full = "<C-SPACE>",

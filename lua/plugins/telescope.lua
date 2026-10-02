@@ -1,7 +1,6 @@
 return {
     {
         "nvim-telescope/telescope.nvim",
-        tag = "0.1.8",
         dependencies = {
             "nvim-lua/plenary.nvim",
             "debugloop/telescope-undo.nvim",
@@ -49,6 +48,8 @@ return {
                         i = {
                             ["<C-j>"] = actions.preview_scrolling_down,
                             ["<C-k>"] = actions.preview_scrolling_up,
+                            ["<C-h>"] = actions.preview_scrolling_left,
+                            ["<C-l>"] = actions.preview_scrolling_right,
                             ["<C-Down>"] = actions.cycle_history_next,
                             ["<C-Up>"] = actions.cycle_history_prev,
                         },
@@ -56,8 +57,8 @@ return {
                             ["q"] = actions.close,
                             ["<C-j>"] = actions.preview_scrolling_down,
                             ["<C-k>"] = actions.preview_scrolling_up,
-                            -- ["<C-h>"] = actions.preview_scrolling_left, -- FIXME: no such action
-                            -- ["<C-l>"] = actions.preview_scrolling_right, -- FIXME: no such action
+                            ["<C-h>"] = actions.preview_scrolling_left,
+                            ["<C-l>"] = actions.preview_scrolling_right,
                         },
                     },
                 },

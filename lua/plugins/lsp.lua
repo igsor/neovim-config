@@ -2,17 +2,7 @@ return {
     {
         "neovim/nvim-lspconfig",
         config = function()
-            require('lspconfig').ruff.setup({})
-            vim.keymap.set('n', '<leader>f', function()
-                vim.lsp.buf.format { async = true }
-                vim.lsp.buf.code_action {
-                    context = { only = { 'source.organizeImports' } },
-                    apply = true,
-                }
-                end,
-                bufopts
-            )
-            require('lspconfig').pylsp.setup{
+            vim.lsp.config('pylsp', {
                 settings = {
                     pylsp = {
                         plugins = {
@@ -22,8 +12,20 @@ return {
                             }
                         }
                     }
+                },
+            })
+            vim.lsp.enable('pylsp')
+            vim.lsp.enable('ruff')
+
+            vim.keymap.set('n', '<leader>f', function()
+                vim.lsp.buf.format { async = true }
+                vim.lsp.buf.code_action {
+                    context = { only = { 'source.organizeImports' } },
+                    apply = true,
                 }
-            }
+                end,
+                bufopts
+            )
         end,
     },
     -- FIXME: doesn't seem to work

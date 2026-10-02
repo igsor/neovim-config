@@ -74,7 +74,7 @@ return {
     {
         "nvim-treesitter/nvim-treesitter-textobjects",
         -- FIXME: master branch is locked. should switch to main as soon as it becomes stable
-        branch = "master",
+        branch = "main",
         init = function()
             -- Disable entire built-in ftplugin mappings to avoid conflicts.
             -- See https://github.com/neovim/neovim/tree/master/runtime/ftplugin for built-in ftplugins.
@@ -86,44 +86,42 @@ return {
             move = {
                 enable = true,
                 set_jumps = true, -- whether to set jumps in the jumplist
-                goto_next_start = {
-                  ["]m"] = "@function.outer",
-                  ["]]"] = "@class.outer",
-                  ["]a"] = "@parameter.inner",
-                  ["]n"] = "@statement.outer",
-                  ["]b"] = "@block.outer",
-                  ["]="] = "@assignment.lhs",
-                  ["]c"] = "@call.outer",
-                  ["]C"] = "@call.inner",
-                },
-                goto_next_end = {
-                  ["]M"] = "@function.outer",
-                  ["]["] = "@class.outer",
-                  ["]N"] = "@statement.outer",
-                  ["]A"] = "@parameter.inner",
-                  ["]B"] = "@block.outer",
-                },
-                goto_previous_start = {
-                  ["[m"] = "@function.outer",
-                  ["[["] = "@class.outer",
-                  ["[a"] = "@parameter.inner",
-                  ["[n"] = "@statement.outer",
-                  ["[b"] = "@block.outer",
-                  ["[="] = "@assignment.lhs",
-                  ["[c"] = "@call.outer",
-                  ["[C"] = "@call.inner",
-                },
-                goto_previous_end = {
-                  ["[M"] = "@function.outer",
-                  ["[]"] = "@class.outer",
-                  ["[N"] = "@statement.outer",
-                  ["[A"] = "@parameter.inner",
-                  ["[B"] = "@block.outer",
-                },
             },
         },
         config = function(_, opts)
-            require('nvim-treesitter.configs').setup({textobjects = opts})
+            require("nvim-treesitter-textobjects").setup(opts)
+
+            local move = require("nvim-treesitter-textobjects.move")
+
+            vim.keymap.set({ "n", "x", "o" }, "]m", function() move.goto_next_start("@function.outer", "textobjects") end)
+            vim.keymap.set({ "n", "x", "o" }, "]]", function() move.goto_next_start("@class.outer", "textobjects") end)
+            vim.keymap.set({ "n", "x", "o" }, "]a", function() move.goto_next_start("@parameter.inner", "textobjects") end)
+            vim.keymap.set({ "n", "x", "o" }, "]n", function() move.goto_next_start("@statement.outer", "textobjects") end)
+            vim.keymap.set({ "n", "x", "o" }, "]b", function() move.goto_next_start("@block.outer", "textobjects") end)
+            vim.keymap.set({ "n", "x", "o" }, "]=", function() move.goto_next_start("@assignment.lhs", "textobjects") end)
+            vim.keymap.set({ "n", "x", "o" }, "]c", function() move.goto_next_start("@call.outer", "textobjects") end)
+            vim.keymap.set({ "n", "x", "o" }, "]C", function() move.goto_next_start("@call.inner", "textobjects") end)
+
+            vim.keymap.set({ "n", "x", "o" }, "[m", function() move.goto_previous_start("@function.outer", "textobjects") end)
+            vim.keymap.set({ "n", "x", "o" }, "[[", function() move.goto_previous_start("@class.outer", "textobjects") end)
+            vim.keymap.set({ "n", "x", "o" }, "[a", function() move.goto_previous_start("@parameter.inner", "textobjects") end)
+            vim.keymap.set({ "n", "x", "o" }, "[n", function() move.goto_previous_start("@statement.outer", "textobjects") end)
+            vim.keymap.set({ "n", "x", "o" }, "[b", function() move.goto_previous_start("@block.outer", "textobjects") end)
+            vim.keymap.set({ "n", "x", "o" }, "[=", function() move.goto_previous_start("@assignment.lhs", "textobjects") end)
+            vim.keymap.set({ "n", "x", "o" }, "[c", function() move.goto_previous_start("@call.outer", "textobjects") end)
+            vim.keymap.set({ "n", "x", "o" }, "[C", function() move.goto_previous_start("@call.inner", "textobjects") end)
+
+            vim.keymap.set({ "n", "x", "o" }, "]M", function() move.goto_next_end("@function.outer", "textobjects") end)
+            vim.keymap.set({ "n", "x", "o" }, "][", function() move.goto_next_end("@class.outer", "textobjects") end)
+            vim.keymap.set({ "n", "x", "o" }, "]N", function() move.goto_next_end("@statement.outer", "textobjects") end)
+            vim.keymap.set({ "n", "x", "o" }, "]A", function() move.goto_next_end("@parameter.inner", "textobjects") end)
+            vim.keymap.set({ "n", "x", "o" }, "]B", function() move.goto_next_end("@block.outer", "textobjects") end)
+
+            vim.keymap.set({ "n", "x", "o" }, "[M", function() move.goto_previous_end("@function.outer", "textobjects") end)
+            vim.keymap.set({ "n", "x", "o" }, "[[", function() move.goto_previous_end("@class.outer", "textobjects") end)
+            vim.keymap.set({ "n", "x", "o" }, "[N", function() move.goto_previous_end("@statement.outer", "textobjects") end)
+            vim.keymap.set({ "n", "x", "o" }, "[A", function() move.goto_previous_end("@parameter.inner", "textobjects") end)
+            vim.keymap.set({ "n", "x", "o" }, "[B", function() move.goto_previous_end("@block.outer", "textobjects") end)
         end,
     },
     {
