@@ -34,7 +34,6 @@ require("lazy").setup(
         "hrsh7th/nvim-cmp",
         -- "SirVer/ultisnips",
         -- "quangnguyen30192/cmp-nvim-ultisnips",
-        -- "tzachar/local-highlight.nvim",
         "pablopunk/pi.nvim",
         "ggml-org/llama.vim",
         -- "rcarriga/nvim-notify", -- used by pi, doesn't work as expected.
@@ -44,12 +43,6 @@ require("lazy").setup(
   {import = "lang"},
   }
 )
-
--- require('local-highlight').setup({
---     hlgroup='Search',
-
--- })
-
 
 -- import the rest in arbitrary order
 require("completion")
