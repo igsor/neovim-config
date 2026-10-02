@@ -29,7 +29,6 @@ require("lazy").setup(
         "tpope/vim-fugitive",
         -- "vim-syntastic/syntastic", -- FIXME: takes WAY too long; replace
         "preservim/vim-markdown",
-        "tpope/vim-commentary",
         "godlygeek/tabular",
         "jmcantrell/vim-virtualenv",
         "machakann/vim-sandwich",
