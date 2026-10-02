@@ -1,4 +1,10 @@
 
+-- allow switching unsaved buffers
+vim.opt.hidden = true
+
+-- update buffer when file is changed from the outside
+vim.opt.autoread = true
+
 -- window switches via leader
 vim.keymap.set('n', '<C-J>', '<C-W><C-J>')
 vim.keymap.set('n', '<C-K>', '<C-W><C-K>')
