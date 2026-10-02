@@ -72,6 +72,61 @@ return {
         end,
     },
     {
+        "nvim-treesitter/nvim-treesitter-textobjects",
+        -- FIXME: master branch is locked. should switch to main as soon as it becomes stable
+        branch = "master",
+        init = function()
+            -- Disable entire built-in ftplugin mappings to avoid conflicts.
+            -- See https://github.com/neovim/neovim/tree/master/runtime/ftplugin for built-in ftplugins.
+            vim.g.no_plugin_maps = true
+            -- Or, disable per filetype (add as you like)
+            -- vim.g.no_python_maps = true
+        end,
+        opts = {
+            move = {
+                enable = true,
+                set_jumps = true, -- whether to set jumps in the jumplist
+                goto_next_start = {
+                  ["]m"] = "@function.outer",
+                  ["]]"] = "@class.outer",
+                  ["]a"] = "@parameter.inner",
+                  ["]n"] = "@statement.outer",
+                  ["]b"] = "@block.outer",
+                  ["]="] = "@assignment.lhs",
+                  ["]c"] = "@call.outer",
+                  ["]C"] = "@call.inner",
+                },
+                goto_next_end = {
+                  ["]M"] = "@function.outer",
+                  ["]["] = "@class.outer",
+                  ["]N"] = "@statement.outer",
+                  ["]A"] = "@parameter.inner",
+                  ["]B"] = "@block.outer",
+                },
+                goto_previous_start = {
+                  ["[m"] = "@function.outer",
+                  ["[["] = "@class.outer",
+                  ["[a"] = "@parameter.inner",
+                  ["[n"] = "@statement.outer",
+                  ["[b"] = "@block.outer",
+                  ["[="] = "@assignment.lhs",
+                  ["[c"] = "@call.outer",
+                  ["[C"] = "@call.inner",
+                },
+                goto_previous_end = {
+                  ["[M"] = "@function.outer",
+                  ["[]"] = "@class.outer",
+                  ["[N"] = "@statement.outer",
+                  ["[A"] = "@parameter.inner",
+                  ["[B"] = "@block.outer",
+                },
+            },
+        },
+        config = function(_, opts)
+            require('nvim-treesitter.configs').setup({textobjects = opts})
+        end,
+    },
+    {
         'gsuuon/tshjkl.nvim',
         opts = {
             -- false to highlight only. Note that enabling this will hide the highlighting of child nodes
