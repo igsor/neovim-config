@@ -1,8 +1,10 @@
 
 -- set leader for extra key combinations
+-- NOTE: must be set before loading lazy
 vim.g.mapleader = ","
 
 -- use system clipboard
+-- NOTE: requires xclip (X11) or simialr, see :help clipboard
 vim.opt.clipboard = 'unnamedplus'
 
 -- allow the mouse to be used in nvim
