@@ -21,3 +21,10 @@ vim.opt.mat = 2
 
 -- enable wrapping with h and l
 vim.opt.whichwrap:append("h,l")
+
+---
+-- indentation and tab handling
+---
+
+-- show whitespace and tab mixtures
+vim.g.show_spaces_that_precede_tabs = true

@@ -13,6 +13,10 @@ vim.opt.backup = false
 vim.opt.swapfile = false
 vim.opt.wb = false
 
+-- trim trailing whitespaces on save
+vim.g.strip_whitespace_on_save = true
+vim.g.strip_whitespace_confirm = false
+
 -- fast saving
 vim.keymap.set("n", "<leader>w", ":w!<cr>")
 vim.keymap.set("n", "<leader>x", ":x!<cr>")
