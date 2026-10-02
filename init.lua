@@ -63,6 +63,8 @@ require("lazy").setup(
         -- "georg3tom/llama.nvim",
         -- "heavysudo/pi-neovim-plugin",
         "zlass/abolish.nvim",
+  {import = "plugins"},
+  {import = "lang"},
   }
 )
 
