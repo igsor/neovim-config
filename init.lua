@@ -26,7 +26,6 @@ require("lazy").setup(
         "vim-airline/vim-airline",
         "vim-airline/vim-airline-themes",
         "preservim/nerdtree",
-        "tpope/vim-fugitive",
         -- "vim-syntastic/syntastic", -- FIXME: takes WAY too long; replace
         "preservim/vim-markdown",
         "godlygeek/tabular",
