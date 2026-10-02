@@ -21,10 +21,6 @@ vim.opt.rtp:prepend(lazypath)
 -- load and configure plugins
 require("lazy").setup(
     {
-        -- "rose-pine/neovim",
-        --"vim-scripts/indentpython.vim", -- replaced by treesitter
-        --
-        -- cmp
         -- "SirVer/ultisnips",
         -- "quangnguyen30192/cmp-nvim-ultisnips",
         "pablopunk/pi.nvim",
